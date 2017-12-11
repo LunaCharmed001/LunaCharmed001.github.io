@@ -1,0 +1,20 @@
+body {
+	background-color: lightgrey;
+}
+
+h1 {
+	color: navy;
+	margin-left: 20px;
+}
+
+/*global
+	.container{
+		width:80%;
+		margin:auto;
+		overflow:hiddin;
+	}
+	
+	header{
+		background:#3542a
+		
+	}
