@@ -4,7 +4,7 @@ body {
 
 h1 {
 	color: black;
-	margin-left: 20px;
+	margin-left: 20%;
 }
 
 	
@@ -88,7 +88,7 @@ h1 {
 	
 	
 	#showcase{
-		min-height: 400px;
+		min-height: 60%;
 		min-width: 100%; 
 		background:url('./Images/the-asylum-5.jpg') no-repeat -300px -95px;
 		
