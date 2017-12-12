@@ -14,11 +14,65 @@ h1 {
 		overflow:hidden;
 	}
 	
+	ul{
+		margin:0;
+		padding:0;
+	}
+	
 	header{
 		background:#a36411;
 		color:#3b3d13;
 		padding-top: 30px;
 		min-height: 70px;
-		border-bottom:#e8491d 3px solid;
+		border-bottom:black 3px solid;
 		
+	}
+	
+	
+	header a{
+		color: white;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size:16px;
+	}
+	
+	
+
+	
+	header li{
+		
+		display:inline;
+		padding: 0 20px 0 20px;
+	}
+
+
+	header #branding{
+		float: left;
+	}
+
+
+	header #branding h1{
+		margin:0;
+	}
+
+	header nav{
+		float: right;
+		margin-top: 10px;
+	}
+	
+	header .highlight, header .current a{
+		color: black;
+		font-weight: bold;
+	}
+	
+	header a:hover{
+		color: #cccccc;
+		font-weight:bold;
+	}
+	
+	
+	
+	#showcase{
+		min-height: 400px;
+		background:url('./Images/the-asylum-5.jpg') no-repeat;
 	}
