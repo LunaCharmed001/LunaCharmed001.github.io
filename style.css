@@ -74,5 +74,5 @@ h1 {
 	
 	#showcase{
 		min-height: 400px;
-		background:url('./Images/the-asylum-5.jpg') no-repeat;
+		background:url('./Images/the-asylum-5.jpg') no-repeat 0 -95px;
 	}
