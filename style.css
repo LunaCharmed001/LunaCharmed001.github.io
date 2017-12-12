@@ -84,6 +84,7 @@ h1 {
 	#showcase{
 		min-height: 400px;
 		background:url('./Images/the-asylum-5.jpg') no-repeat 0 -95px;
+		
 		text-align:center;
 		color:white;
 	}
@@ -135,15 +136,15 @@ h1 {
 	}
 	
 	
-#boxes .box img{
-	width: 200px;
-}
+	#boxes .box img{
+		width: 200px;
+	}
 
 
-footer{
-	padding:20px;
-	margin-top:20px;
-	color:white;
-	background-color: black;
-	text-align: center;
-}
+	footer{
+		padding:20px;
+		margin-top:20px;
+		color:white;
+		background-color: black;
+		text-align: center;
+	}
