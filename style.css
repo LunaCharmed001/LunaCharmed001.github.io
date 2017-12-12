@@ -34,7 +34,8 @@ h1 {
 		background:#a36411;
 		color:#3b3d13;
 		padding-top: 3%;
-		min-height: 16%;
+		padding-bottom: 5%;
+		min-height: 15%;
 		border-bottom:black 3px solid;
 		
 	}
@@ -70,6 +71,7 @@ h1 {
 	header nav{
 		float: right;
 		margin-top:1%;
+		margin-bottom: 5%;
 	}
 	
 	header .highlight, header .current a{
