@@ -1,0 +1,78 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Processing Demo</title>
+<script type="text/javascript" src="Anything.js"></script>
+</head>
+
+<body>
+<script type="text/processing">
+
+///Processing code goes in between the script tags
+PImage background;  //:Creates a variable for an image.
+PImage face;
+int count = 0;
+int Vy = 0; //gravity
+int My = 0;
+int gamestate = 0;
+
+
+void setup(){
+  size(982, 650);
+  face = loadImage("./Images/Cap.png");
+  background = loadImage("./Images/First.png");  
+}
+
+
+void draw(){
+  if (gamestate == 0){
+  image(background, count, 0);
+  image(background, width + count, 0);
+  count --;
+  if (count == -982){
+    count = 0;
+  }
+  image(face, 100, My);
+  Vy++;
+  My = My + Vy;
+  if (My > 700){
+    gamestate = 2;
+    textSize(40); fill(0, 0, 0);
+    text("Game Over", 411, 325);
+  }
+  if (My < -100){
+    gamestate = 2;
+    textSize(40); fill(0, 0, 0);
+    text("Game Over", 411, 325);
+  }
+  }
+  if (gamestate == 2){
+      if (mousePressed && mouseX > 470 && mouseX < 570 && mouseY > 360 && mouseY < 405){
+        gamestate = 0;
+        My = 200;
+    }
+    fill(255, 0, 0);
+    rect(470, 360, 100, 45, 30);
+    fill(0);
+    text("Test", 478, 400);
+    if (mouseX > 470 && mouseX < 570 && mouseY > 360 && mouseY < 405){
+      fill(255, 255, 0);
+      rect(470, 360, 100, 45, 30);
+      fill(0);
+      text("Test", 478, 400);
+    }
+  }
+}
+
+
+
+
+ void mousePressed(){
+   Vy = -17;
+}
+
+</script>
+<canvas id="sketch" style="border: 1px solid black;"></canvas>
+</body>
+</html>
